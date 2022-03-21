@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  clientpod:
+  - apiVersion: v2
+    appVersion: v1
+    created: "2022-03-21T10:18:13.018799201+02:00"
+    description: Server part of service
+    digest: df6faa5eb11fe2875960e6bef622738ff1878af8cafb5c8cb45f5d4a30923c86
+    name: clientpod
+    type: application
+    urls:
+    - clientpod-0.1.0.tgz
+    version: 0.1.0
   firstchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-20T11:22:46.000997265+02:00"
+    created: "2022-03-21T10:18:13.023134892+02:00"
     dependencies:
     - import-values:
       - child: primary.service
@@ -20,15 +31,15 @@ entries:
     urls:
     - firstchart-0.1.0.tgz
     version: 0.1.0
-  secondchart:
+  servpod:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-03-20T11:22:46.001633578+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 32d13584de5ae861d65bc4e94282db6d681d57e8206e118f51a85f74b5684ba2
-    name: secondchart
+    appVersion: v1
+    created: "2022-03-21T10:18:13.023389629+02:00"
+    description: Server part of service
+    digest: a101f4c32d965379298b0280a07a65b8b0b5a3ee87e5d6cb9b31d2e928620eef
+    name: servpod
     type: application
     urls:
-    - secondchart-0.1.0.tgz
+    - servpod-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-20T11:22:45.995826376+02:00"
+generated: "2022-03-21T10:18:13.01829474+02:00"
